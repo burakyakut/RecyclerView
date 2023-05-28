@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp"
+    app:cardBackgroundColor="#D3D3D3"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/detailActivityImage"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/volkan"
+            android:padding="8dp"/>
+
+
+        <TextView
+            android:id="@+id/detailActivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOLKAN DEMİREL"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/detailActivityImage" />
+        <TextView
+            android:id="@+id/detailActivityTakim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FENERBAHÇE"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/detailActivityName" />
+        <TextView
+            android:id="@+id/detailActivityPozisyon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KALECİ"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/detailActivityTakim" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
